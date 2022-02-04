@@ -60,8 +60,25 @@ h1 span {
     justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
+    margin-bottom: 10%;
 }
 
+.textarea input {
+    width: 80%;
+    height: 100%;
+    float: right;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    border: none;
+}
+
+::placeholder {
+    color: hsl(183, 100%, 15%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
 /* TIP AMOUNT BUTTONS   */
 
 ul {
@@ -70,7 +87,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 10%;
+    padding-bottom: 30%;
 }
 
 .btn1{
@@ -78,11 +95,11 @@ ul {
     background-color: hsl(183, 100%, 15%);
     font-weight: 700;
     color: hsl(0, 0%, 100%);
-    width: 49%;
-    height: 30%;
+    width: 48%;
+    height: 40%;
     text-align: center;
     border-radius: 5px;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .btn3{
@@ -90,11 +107,11 @@ ul {
     background-color: hsl(189, 41%, 97%);
     font-weight: 700;
     color: hsl(183, 100%, 15%);
-    width: 49%;
-    height: 30%;
+    width: 48%;
+    height: 40%;
     text-align: center;
     border-radius: 5px;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 /* BILL AND TIP TOTAL CSS  */
