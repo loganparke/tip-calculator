@@ -48,6 +48,7 @@ h1 span {
     height: 1rem;
     margin: 0;
     padding: 0;
+    margin-bottom: 1rem;
 }
 
 .textarea {
@@ -125,17 +126,18 @@ ul {
     margin-top: 4%;
 }
 
-.btn4{
-    all: unset;
-    background-color: hsl(172, 67%, 45%);
-    font-size: 1.5rem;
+#custom {
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 42%;
+    background-color: hsl(189, 41%, 97%);
     font-weight: 700;
-    width: 100%;
-    height: 10%;
+    color: hsl(183, 100%, 15%);
+    height: 40%;
     text-align: center;
     border-radius: 5px;
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin-top: 4%;
 }
 
 /* BILL AND TIP TOTAL CSS  */
@@ -143,6 +145,7 @@ ul {
 .bill-total {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     background-color: hsl(183, 100%, 15%);
     width: 100%;
     height: 15rem;
@@ -150,10 +153,11 @@ ul {
     border-radius: 25px;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
 }
 
 .end-amount {
-    width: 90%;
+    width: 45%;
 }
 
 .end-text {

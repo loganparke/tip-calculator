@@ -1,9 +1,10 @@
-var tip = 1;
+var people;
+var tip;
 
 function f1() {
     var bill = parseInt(document.getElementById("bill").value);
     var people = parseInt(document.getElementById("people").value);
-    tip = .15;
+
     
     var billTip = bill * tip;
     var finalAmt = billTip + bill;
@@ -16,5 +17,44 @@ function f1() {
     document.getElementById("per-person").innerHTML = "$ " + perPersonTotal.toFixed(2);
     document.getElementById("per-person-tip").innerHTML = "$ " + perPersonTip.toFixed(2);
 }
+
+function tip5() {
+    tip = .05;
+    f1();
+}
+
+function tip10() {
+    tip = .10;
+    f1();
+}
+
+function tip15() {
+    tip = .15;
+    f1();
+}
+
+function tip20() {
+    tip = .20;
+    f1();
+}
+
+function tip25() {
+    tip = .25;
+    f1();
+}
+
+var custom = document.getElementById("custom");
+custom.addEventListener("keydown", function(e) {
+    if(e.code === "Enter"){
+        validate(e);
+    }
+});
+
+
+function validate(e) {
+    tip = parseInt(document.getElementById("custom").value) / 100;
+    f1();
+}
+
 
 
