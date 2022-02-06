@@ -32,12 +32,17 @@ h1 span {
 
 .bill-container {
     background-color: hsl(0, 0%, 100%);
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding: 2rem;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .primary-text {
@@ -114,6 +119,13 @@ ul {
     text-align: center;
     border-radius: 5px;
     margin-top: 4%;
+    transition: 1s;
+}
+
+
+.btn1:focus{
+    opacity: .5;
+    transform: scale(1.1);
 }
 
 .btn2{
@@ -125,18 +137,7 @@ ul {
     height: 20%;
     text-align: center;
     border-radius: 5px;
-}
-
-.btn3{
-    all: unset;
-    background-color: hsl(189, 41%, 97%);
-    font-weight: 700;
-    color: hsl(183, 100%, 15%);
-    width: 48%;
-    height: 40%;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 4%;
+    transition: 1s;
 }
 
 #custom {
@@ -151,11 +152,18 @@ ul {
     text-align: center;
     border-radius: 5px;
     margin-top: 4%;
+    transition: 1s;
 }
 
 #custom::placeholder {
     text-align: center;
     margin: .5rem;
+}
+
+#custom:focus{
+    background-color: hsl(172 67% 45% / .2);
+    transform: scale(1.1);
+    border: none;
 }
 
 /* BILL AND TIP TOTAL CSS  */
@@ -179,13 +187,15 @@ ul {
 }
 
 .end-text {
-    display: inline;
+    display: block;
     float: left;
+    width: 100%;
 }
+
 .end-numbers {
     float: right;
     color: hsl(172, 67%, 45%);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -197,3 +207,44 @@ ul {
     color: hsl(186, 14%, 43%);
 }
 
+/* Desktop screen size media quiery */
+
+@media screen and (min-width: 700px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bill-container {
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        height: 45%;
+        border-radius: 2rem;
+    }
+    .options {
+        width: 45%;
+        height: 400px;
+    }
+    .primary-text {
+        font-size: 22px;
+    }
+    .textarea {
+        height: 3rem;
+    }
+    .btn1 {
+        width: 30%;
+
+    }
+    input::placeholder {
+        font-size: .9rem;
+    }
+    #custom {
+        width: 25%;
+ 
+    }
+    .bill-total {
+        width: 45%;
+        height: 400px;
+    }
+}
