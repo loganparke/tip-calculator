@@ -123,7 +123,8 @@ ul {
 }
 
 
-.btn1:focus{
+.btn1:focus,
+.btn1:active{
     opacity: .5;
     transform: scale(1.1);
 }
@@ -160,7 +161,8 @@ ul {
     margin: .5rem;
 }
 
-#custom:focus{
+#custom:focus,
+#custom:active{
     background-color: hsl(172 67% 45% / .2);
     transform: scale(1.1);
     border: none;
