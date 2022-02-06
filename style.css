@@ -120,6 +120,9 @@ ul {
     border-radius: 5px;
     margin-top: 4%;
     transition: 1s;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
 }
 
 
@@ -131,6 +134,7 @@ ul {
     -moz-transform: scale(1.1, 1.1);
     -o-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
 .btn2{
