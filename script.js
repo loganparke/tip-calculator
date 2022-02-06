@@ -8,7 +8,6 @@ function f1() {
     
     var billTip = bill * tip;
     var finalAmt = billTip + bill;
-    console.log(bill, tip, billTip, finalAmt);
     var perPersonTotal = finalAmt / people;
     var perPersonTip = billTip / people;
 
@@ -56,5 +55,15 @@ function validate(e) {
     f1();
 }
 
+function reset() {
+    billTip = 0.00;
+    finalAmt = 0.00;
+    perPersonTotal = 0.00;
+    perPersonTip = 0.00;
+    document.getElementById("total-tip").innerHTML = "$ " + billTip.toFixed(2);
+    document.getElementById("total-amt").innerHTML = "$ " + finalAmt.toFixed(2);
+    document.getElementById("per-person").innerHTML = "$ " + perPersonTotal.toFixed(2);
+    document.getElementById("per-person-tip").innerHTML = "$ " + perPersonTip.toFixed(2);
 
+}
 

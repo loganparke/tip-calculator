@@ -72,14 +72,27 @@ h1 span {
     color: hsl(183, 100%, 15%);
     text-align: right;
     border: none;
+    padding-right: 10px;
+    opacity: .7;
 }
 
-::placeholder {
+input::placeholder {
     color: hsl(183, 100%, 15%);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 900;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    opacity: .7;
 }
+
+input{
+    color: hsl(183, 100%, 15%);
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    opacity: .7;
+}
+
+
 /* TIP AMOUNT BUTTONS   */
 
 ul {
@@ -138,6 +151,11 @@ ul {
     text-align: center;
     border-radius: 5px;
     margin-top: 4%;
+}
+
+#custom::placeholder {
+    text-align: center;
+    margin: .5rem;
 }
 
 /* BILL AND TIP TOTAL CSS  */
